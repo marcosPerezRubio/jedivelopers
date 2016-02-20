@@ -11,7 +11,7 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri: process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || process.env.OPENSHIFT_MONGODB_DB_URL + process.env.OPENSHIFT_APP_NAME || 'mongodb://Goalie7:skullkid7@ds031587.mongolab.com:31587/jedivelopers'
+    uri: process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || process.env.OPENSHIFT_MONGODB_DB_URL + process.env.OPENSHIFT_APP_NAME || 'mongodb://admin:admin@ds031587.mongolab.com:31587/jedivelopers'
   }
 };
 //# sourceMappingURL=production.js.map
