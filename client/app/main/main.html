@@ -1,9 +1,10 @@
 <header class="hero-unit" id="banner">
   <div class="container">
     <h1>Jedivelopers</h1>
-
-    <p class="lead">Work with us!!</p>
     <img src="assets/images/jedi.png" alt="JEDI" height="120px" width="240px">
+    <li  class="lead"> Improve your skills with real world challenges </li>
+    <li  class="lead"> Earn money </li>
+    <li  class="lead"> Networking</li>
   </div>
 </header>
 
@@ -11,8 +12,17 @@
   <div class="row">
     <div class="col-lg-12">
       <h1 class="page-header">Work with us!:</h1>
+      <h4 class="page-header">
+        <i> At JEDI we develop web and mobile solutions for different companies,
+          however  we don't  always have enough human resources to accomplish it.
+          For that reason we are currently searching for external collaborators.</i>
+      </h4>
 
-      <div class="col-lg-6">
+      <div style="margin-left: +15px">
+      <div class="list-group-item list-group-item-danger text-center" ng-show="error"> {{error}}</div>
+      <div class="list-group-item list-group-item-success text-center" ng-show="message"> {{message}}</div>
+      </div>
+        <div class="col-lg-6">
         <label class="h4"> Name: </label>
         <input type="text" class="form-control col-xs-5" ng-model="name"/><br/>
 
@@ -24,6 +34,7 @@
         <input type="text" class="form-control col-xs-3" ng-model="phone"/><br/>
 
         <label class="h4">Skills: </label>
+        <label class="h6"><i>Examples: MEAN, web design, iOS, Android</i> </label>
 
         <div class="col-lg-12" style="margin-left: -30px">
           <div class="col-md-4">
@@ -57,8 +68,7 @@
     <div style="margin-left: +30px">
       <button type="button" class="btn btn-info" ng-click="reset()"> Reset!</button>
       <button type="button" class="btn btn-success" ng-click="submitForm()"> Submit!</button>
-      <div class="list-group-item list-group-item-danger" ng-show="error"> {{error}}</div>
-      <div class="list-group-item list-group-item-success" ng-show="message"> {{message}}</div>
+
     </div>
   </div>
 

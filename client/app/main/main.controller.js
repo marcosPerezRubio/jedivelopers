@@ -25,7 +25,9 @@ angular.module('jedivelopersApp')
 
     $scope.addItem = function(){
       console.log ( $scope.item.name + ' ' + $scope.item.level + ' ');
-      $scope.skills.push(new Item($scope.item.name,$scope.item.level));
+       $scope.skills.push(new Item($scope.item.name,$scope.item.level));
+      $scope.item.name = "";
+      $scope.item.level = 3;
     };
 
     function findItem(name){
@@ -85,11 +87,11 @@ angular.module('jedivelopersApp')
 
 
     $scope.getNumber = function() {
-      alert('The number is: [' + $scope.input.level + ']');
+      alert('The number is: [' + $scope.item.level + ']');
     };
 
     $scope.onChange = function(){
-      console.log('The number is Changed ', $scope.input.level);
+      console.log('The number is Changed ', $scope.item.level);
     };
 
   }]);
